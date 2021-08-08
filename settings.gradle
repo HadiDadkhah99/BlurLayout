@@ -1,0 +1,3 @@
+include ':BlurredBottomNavigation'
+include ':app'
+rootProject.name = "BlurLayout"
