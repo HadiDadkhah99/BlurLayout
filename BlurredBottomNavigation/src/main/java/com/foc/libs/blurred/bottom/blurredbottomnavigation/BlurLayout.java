@@ -39,7 +39,7 @@ public class BlurLayout extends FrameLayout {
     //layout height
     private int h = -1;
     //blur value
-    private float blurValue = 1;
+    private int blurValue = 1;
     //blur item(s)
     private List<BlurItem> blurItem = new ArrayList<>();
 
@@ -96,7 +96,7 @@ public class BlurLayout extends FrameLayout {
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.BlurLayout);
 
         //get blur value
-        blurValue = typedArray.getFloat(R.styleable.BlurLayout_blurValue, blurValue);
+        blurValue = typedArray.getInt(R.styleable.BlurLayout_blurValue, blurValue);
 
         //recycle
         typedArray.recycle();

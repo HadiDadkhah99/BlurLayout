@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BlurLayout blurLayout = findViewById(R.id.blurLayout);
-        BlurItem blurItem = findViewById(R.id.blurItem);
-        blurLayout.attachItem(blurItem);
+        blurLayout.attachItem(findViewById(R.id.blurItem));
     }
 }

@@ -2,7 +2,7 @@
 <resources>
 
     <declare-styleable name="BlurLayout">
-        <attr name="blurValue" format="float" />
+        <attr name="blurValue" format="integer" />
     </declare-styleable>
 
 

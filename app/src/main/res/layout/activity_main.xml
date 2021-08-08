@@ -10,7 +10,7 @@
         android:id="@+id/blurLayout"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        app:blurValue="25.0">
+        app:blurValue="10">
 
         <ScrollView
             android:layout_height="wrap_content"
@@ -265,23 +265,19 @@
 
     </com.foc.libs.blurred.bottom.blurredbottomnavigation.BlurLayout>
 
-
     <com.foc.libs.blurred.bottom.blurredbottomnavigation.BlurItem
         android:id="@+id/blurItem"
         android:background="@android:color/transparent"
-        android:layout_height="96dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_height="64dp"
         android:layout_width="match_parent"
-        app:cardCornerRadius="12dp"
+        app:cardCornerRadius="0dp"
         app:cardElevation="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <View
-            android:alpha="0.25"
+            android:alpha="0.3"
             android:background="@color/white"
             android:layout_height="match_parent"
             android:layout_width="match_parent" />
