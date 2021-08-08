@@ -26,6 +26,9 @@ dependencies {
 ```
 
 ## How to use it
+
+![](http://www.dadkhahhadi.ir/github/blurLayoutGif.gif)
+
 ### You must use this way to use it
 ```xml
 <AnyLayout>
