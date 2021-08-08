@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
+
     <com.foc.libs.blurred.bottom.blurredbottomnavigation.BlurLayout
         android:id="@+id/blurLayout"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        app:blurValue="10">
+        app:blurValue="15">
 
         <ScrollView
             android:layout_height="wrap_content"
@@ -24,7 +25,7 @@
 
 
                 <LinearLayout
-                    android:background="@android:color/holo_green_light"
+                    android:background="#019419"
                     android:layout_height="140dp"
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
@@ -63,7 +64,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:background="#C75353"
+                    android:background="#019419"
                     android:layout_height="140dp"
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
@@ -102,7 +103,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:background="#BDE205"
+                    android:background="#019419"
                     android:layout_height="140dp"
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
@@ -181,7 +182,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:background="#5A016A"
+                    android:background="#019419"
                     android:layout_height="140dp"
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
@@ -220,7 +221,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:background="#2846CD"
+                    android:background="#019419"
                     android:layout_height="140dp"
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
@@ -265,22 +266,67 @@
 
     </com.foc.libs.blurred.bottom.blurredbottomnavigation.BlurLayout>
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:elevation="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="#0D0D0D"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Blur Layout" />
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
     <com.foc.libs.blurred.bottom.blurredbottomnavigation.BlurItem
         android:id="@+id/blurItem"
+        android:alpha="0.99"
         android:background="@android:color/transparent"
-        android:layout_height="64dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:layout_width="match_parent"
-        app:cardCornerRadius="0dp"
+        app:cardCornerRadius="24dp"
         app:cardElevation="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <View
-            android:alpha="0.3"
+            android:alpha="0.25"
             android:background="@color/white"
             android:layout_height="match_parent"
             android:layout_width="match_parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:elevation="0dp"
+            app:itemIconTint="@color/bottom_shape"
+            app:itemTextColor="@color/bottom_shape"
+            app:menu="@menu/test_menu" />
     </com.foc.libs.blurred.bottom.blurredbottomnavigation.BlurItem>
 
 
